@@ -163,15 +163,20 @@ h3 {
 }
 
 .content-front {
-  transform: translateZ(100px);
+  transform: translateZ(180px);
   position: fixed;
+  backface-visibility: hidden;
 }
 
 .content-side {
-  transform: rotateY(-90deg) translateZ(-100px);
+  transform: rotateY(-90deg) translateZ(-180px);
+  backface-visibility: hidden;
 }
 
 .blue {
+  background: #071c42;
+}
+.content-box.blue {
   background: #071c42;
 }
 
