@@ -1,0 +1,266 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: bold;
+  color: white;
+  font-size: 20px;
+}
+
+header {
+  height: 100vh;
+  display: flex;
+  background-image: url(./src/img/background.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  justify-content: center;
+  align-items: center;
+  background-color: #071c42;
+}
+
+h1 {
+  font-size: 5rem;
+  font-weight: bold;
+  text-align: center;
+  padding: 0 4rem;
+}
+
+.flexbox-header p {
+  font-size: 1.6rem;
+  text-align: center;
+  margin: 1rem;
+}
+
+.flexbox-header hr {
+  border: solid 2px;
+}
+
+/* section headers */
+
+.section-header {
+  height: 150px;
+  background-color: #071c42;
+  padding-top: 50px;
+}
+
+h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-left: 4rem;
+  margin-bottom: 59px;
+}
+
+.bar {
+  border: solid white 1px;
+  margin: 0 2rem;
+  display: block;
+}
+
+.mint-box {
+  width: 500px;
+  height: 20px;
+  background-color: #3dcab1;
+}
+/* sections */
+.about-me {
+  min-height: 647px;
+  max-height: 100vh;
+}
+
+.my-projects {
+  margin-bottom: 4rem;
+}
+
+/* content */
+.grid-container {
+  display: grid;
+  grid-template-columns: minmax(20rem, 50%) 1fr;
+  height: calc(100vh -150px);
+}
+
+h3 {
+  color: #101010;
+  font-size: 1.3rem;
+  font-weight: bold;
+  display: block;
+  margin-top: 3rem;
+  margin-left: 4rem;
+}
+
+.grid-container p {
+  color: #101010;
+  margin: 1rem 4rem;
+}
+
+.photo-shape {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.photo-shape img {
+  height: 20rem;
+  mask: url(./src/img/Shield-shape.svg) no-repeat;
+}
+
+/* My projects header */
+.my-projects-header {
+  padding-top: 50px;
+}
+
+.my-projects-header .bar {
+  border: solid #d9d9d9 1px;
+  margin: 0 2rem;
+  display: block;
+}
+
+.my-projects-header h2 {
+  color: #101010;
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-left: 4rem;
+  margin-bottom: 0;
+}
+
+.my-projects .grid-container {
+  display: grid;
+  grid-template-columns: minmax(20rem, 50%) minmax(0, 50%);
+}
+
+.my-projects .grid-container p {
+  color: #101010;
+  margin: 1rem 4rem;
+  perspective: 1000px;
+}
+
+.wave {
+  overflow: hidden;
+  margin-top: -75px;
+}
+
+/* My projects  */
+.my-projects-grid {
+  display: grid;
+  margin: -210px 4rem 0 4rem;
+  grid-template-columns: repeat(3, minmax(277px, 1fr));
+  align-content: center;
+}
+
+.box {
+  transition: transform 2s;
+  transform-style: preserve-3d;
+}
+
+.content-box {
+  aspect-ratio: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.content-front {
+  transform: translateZ(100px);
+  position: fixed;
+}
+
+.content-side {
+  transform: rotateY(-90deg) translateZ(-100px);
+}
+
+.blue {
+  background: #071c42;
+}
+
+.mint {
+  background: #3dcab1;
+}
+
+.box:hover {
+  transform: rotateY(90deg);
+}
+
+.box .content-box h3,
+.box .content-box p {
+  margin: 0 1.3rem;
+  text-align: justify;
+}
+
+.box .content-box h3 {
+  text-align: center;
+}
+
+.blue p,
+.blue h3 {
+  color: #d9d9d9;
+}
+
+.mint p,
+.mint h3 {
+  color: white;
+}
+
+p {
+  font-size: 11.7pt;
+}
+
+.content-box a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.screenshot {
+  width: 80%;
+}
+
+/* Contatc */
+.contact {
+  height: calc(100vh - 150px);
+}
+
+.content-text {
+  margin: 3rem 4rem;
+}
+
+.content-text p {
+  color: #101010;
+  width: 20rem;
+  margin-bottom: 1rem;
+}
+
+.contact-info p {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 1rem;
+  width: 12rem;
+}
+
+/* footer */
+
+footer .section-header {
+  padding-top: 0;
+}
+
+footer .section-header .bar {
+  margin-top: 20px;
+  margin-bottom: 1rem;
+}
+
+h4 {
+  font-size: 13pt;
+  font-weight: bold;
+  display: block;
+  margin-left: 4rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+footer .section-header p {
+  text-align: center;
+}
