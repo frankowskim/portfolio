@@ -130,10 +130,11 @@ h3 {
   grid-template-columns: minmax(20rem, 50%) minmax(0, 50%);
 }
 
-.my-projects .grid-container p {
+.collaborate {
+  font-weight: 550;
   color: #101010;
-  margin: 1rem 4rem;
-  perspective: 1000px;
+  font-size: 13pt;
+  margin-top: 10px;
 }
 
 .wave {
@@ -226,6 +227,7 @@ p {
 /* Contatc */
 .contact {
   height: calc(100vh - 150px);
+  min-height: 470px;
 }
 
 .content-text {
@@ -234,7 +236,7 @@ p {
 
 .content-text p {
   color: #101010;
-  width: 20rem;
+  max-width: 20rem;
   margin-bottom: 1rem;
   text-align: justify;
 }
@@ -270,4 +272,106 @@ a {
 
 footer .section-header p {
   text-align: center;
+}
+
+@media (max-width: 984px) {
+  .about-me {
+    max-height: unset;
+  }
+  .mint-box {
+    width: 100%;
+  }
+
+  .grid-container {
+    grid-template-columns: 1fr;
+  }
+
+  .my-projects-grid {
+    margin-top: -160px;
+    grid-template-columns: repeat(2, minmax(270px, 1fr));
+  }
+  #Bankist {
+    order: 1;
+  }
+  #Kindergarden {
+    order: 2;
+  }
+  #Guess_my_number,
+  #Pig_game {
+    order: 3;
+  }
+}
+
+@media (max-width: 700px) {
+  h1 {
+    padding: unset;
+    font-size: 3rem;
+  }
+
+  .flexbox-header p {
+    margin: 1rem 0;
+  }
+
+  .my-projects {
+    margin-bottom: 0;
+  }
+
+  .my-projects-grid {
+    grid-template-columns: 1fr;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  #Bankist,
+  #Kindergarden,
+  #Guess_my_number,
+  #Pig_game {
+    order: 0;
+  }
+  .box:hover {
+    transform: unset;
+  }
+
+  .content-box {
+    aspect-ratio: unset;
+  }
+
+  .content-front {
+    min-height: 200px;
+    position: unset;
+  }
+
+  .box .content-box h3,
+  .box .content-box p {
+    margin: 0 4em;
+  }
+
+  .content-side {
+    transform: unset;
+    padding-bottom: 4rem;
+  }
+}
+
+@media (max-width: 408px) {
+  .box .content-box h3,
+  .box .content-box p {
+    margin: 0 5%;
+  }
+
+  .my-projects-grid {
+    margin-top: 0;
+  }
+  .wave {
+    display: none;
+  }
+
+  .contact {
+    margin-bottom: 1rem;
+  }
+  .contact-info a img {
+    position: absolute;
+  }
+
+  .contact-info a p {
+    margin-left: 2rem;
+  }
 }
