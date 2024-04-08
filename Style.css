@@ -92,6 +92,7 @@ h3 {
 .grid-container p {
   color: #101010;
   margin: 1rem 4rem;
+  text-align: justify;
 }
 
 .photo-shape {
@@ -235,6 +236,7 @@ p {
   color: #101010;
   width: 20rem;
   margin-bottom: 1rem;
+  text-align: justify;
 }
 
 .contact-info p {
