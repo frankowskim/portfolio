@@ -321,6 +321,11 @@ footer .section-header p {
     margin-left: 0;
     margin-right: 0;
   }
+
+  .wave {
+    display: none;
+  }
+
   #Bankist,
   #Kindergarden,
   #Guess_my_number,
@@ -349,6 +354,19 @@ footer .section-header p {
     transform: unset;
     padding-bottom: 4rem;
   }
+
+  .contact {
+    margin-bottom: 1rem;
+    min-height: 550px;
+  }
+
+  .contact-info a img {
+    position: absolute;
+  }
+
+  .contact-info a p {
+    margin-left: 2rem;
+  }
 }
 
 @media (max-width: 408px) {
@@ -359,19 +377,5 @@ footer .section-header p {
 
   .my-projects-grid {
     margin-top: 0;
-  }
-  .wave {
-    display: none;
-  }
-
-  .contact {
-    margin-bottom: 1rem;
-  }
-  .contact-info a img {
-    position: absolute;
-  }
-
-  .contact-info a p {
-    margin-left: 2rem;
   }
 }
