@@ -318,8 +318,7 @@ footer .section-header p {
 
   .my-projects-grid {
     grid-template-columns: 1fr;
-    margin-left: 0;
-    margin-right: 0;
+    margin: 0 0 4rem 0;
   }
 
   .wave {
@@ -370,12 +369,12 @@ footer .section-header p {
 }
 
 @media (max-width: 408px) {
+  h2 {
+    font-size: 2rem;
+  }
+
   .box .content-box h3,
   .box .content-box p {
     margin: 0 5%;
-  }
-
-  .my-projects-grid {
-    margin-top: 0;
   }
 }
