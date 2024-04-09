@@ -87,6 +87,7 @@ h3 {
   display: block;
   margin-top: 3rem;
   margin-left: 4rem;
+  margin-right: 4rem;
 }
 
 .grid-container p {
@@ -99,6 +100,10 @@ h3 {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.mobile {
+  display: none;
 }
 
 .photo-shape img {
@@ -283,7 +288,7 @@ footer .section-header p {
   }
 
   .grid-container {
-    grid-template-columns: 1fr;
+    grid-template-columns: 2fr 1fr;
   }
 
   .my-projects-grid {
@@ -306,6 +311,20 @@ footer .section-header p {
   h1 {
     padding: unset;
     font-size: 3rem;
+  }
+  h3 {
+    margin: 1rem 3rem 0 3rem;
+  }
+
+  .my-projects-header h2,
+  h4 {
+    margin-left: 3rem;
+  }
+  .grid-container {
+    grid-template-columns: 1fr;
+  }
+  .grid-container p {
+    margin: 1rem 3rem;
   }
 
   .flexbox-header p {
@@ -346,7 +365,7 @@ footer .section-header p {
 
   .box .content-box h3,
   .box .content-box p {
-    margin: 0 4em;
+    margin: 1rem 3rem;
   }
 
   .content-side {
@@ -366,15 +385,39 @@ footer .section-header p {
   .contact-info a p {
     margin-left: 2rem;
   }
+  .wide {
+    display: none;
+  }
+
+  .mobile {
+    display: flex;
+  }
+
+  .about-me .section-header {
+    height: auto;
+  }
+
+  .my-projects-grid {
+    margin: 0;
+  }
+  .content-box a {
+    margin: 0 3rem;
+  }
+  .screenshot {
+    width: 100%;
+  }
+
+  .contact .section-header {
+    height: auto;
+  }
+
+  .content-text {
+    margin: 3rem;
+  }
 }
 
 @media (max-width: 408px) {
   h2 {
     font-size: 2rem;
-  }
-
-  .box .content-box h3,
-  .box .content-box p {
-    margin: 0 5%;
   }
 }
